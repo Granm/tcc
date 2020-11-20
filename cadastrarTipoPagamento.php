@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/styleEdicao.css" rel="stylesheet">
 	<title>Gerfin</title>
 </head>
 
@@ -11,18 +12,19 @@
 	
 	<h1 class="tit">Cadastrar Tipo de pagamento</h1> 
 	
-	<div class="cadastro">
-	
-		<form method="post" action="cadastrarTipoPagamentoSalvar.php"> 
-			
-			<p> 
+	<form method="post" action="cadastrarTipoPagamentoSalvar.php"> 
+		
+		<div class="divPrincipalEdicao">
+			<h2 class="h2Edicao">Dados do tipo de pagamento</h2> 
+
+			<div> 
 				<label for="txtDescricao">Descrição do tipo de Pagamento:</label><br>
 				<input id="txtDescricao" name="txtDescricao" required="required" type="text" placeholder="Descrição" />
-			</p>
+			</div>
 			  
-			<p> 
-				<input  type="submit" value="Cadastrar"/> 
-			</p>
+			<div class="margemCima30"> 
+				<input type="submit" class="botaoCadastro" value="Cadastrar"/> 
+			</div>
 		</form>
 	</div>
 	
