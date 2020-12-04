@@ -20,7 +20,7 @@ if(isset($_POST['txtEmail']) && !empty($_POST['txtEmail'])
         $icone      = 'success';
         $location   = '../index.php';
 
-        $email = 'pedrodrop.21@gmail.com';
+        $email = 'jorgin.silva@gmail.com';
 
         $conteudoEmail      = 'Nova senha para acessar o GERFIN - Gerenciador Financeiro';
         $mensagemEmail      = 'Sua nova senha de acesso é: <b>'.$novaSenha.'</b><br><br>Vale lembrar também que sua antiga senha já não funciona mais...';  

@@ -22,7 +22,7 @@ if(isset($_POST['idTipoRecebimento']) && !empty($_POST['idTipoRecebimento'])
     $idCliente = addslashes($_POST['idCliente']);
     $txtContrato = addslashes($_POST['txtContrato']);
     $txtGestor = addslashes(utf8_decode( $_POST['txtGestor'] ));
-    $txtDescricao = addslashes(utf8_decode( $_POST['txtDescricao'] ));
+    $txtDescricao = addslashes(utf8_decode( $_POST['txtDescricao'] );
     $vlrBruto = addslashes($_POST['vlrBruto']);
     $vlrLiquido = addslashes($_POST['vlrLiquido']);
     $datVencimento = addslashes($_POST['datVencimento']);

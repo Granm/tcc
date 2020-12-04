@@ -23,21 +23,16 @@
 					}
 				}
 			});
-			$('.mascaraCodigoValidacao').mask('ZZZZZZ', {
-				translation: {
-					'Z': {
-						pattern: /\d/
-					}
-				}
-			});
-			
 
-			//TODO
-			/*$('#txtCPFCNPJ').on( "keypress", function() {
+			$('#txtCPFCNPJ').on( "keypress", function() {
 				
-				( $( this ).length > 11 ) ?  $( this ).mask('00.000.000/0000-00') : $( this ).mask('000.000.000-00');
+				if ( $( this ).val().length < 14 ){
+					$( this ).mask('000.000.000-000');
+				}else{
+					$( this ).mask('00.000.000/0000-00');
+				}
 
-			});*/
+			});
 
 			//Ao enviar o formulário (Submit) o sistema retira todas as máscara incluídas na tela
 			$( "form" ).submit( function( event ) {
@@ -52,8 +47,7 @@
 				//$('.mascaraValor').unmask();
 				//$('.mascaraValor2').unmask();
 				$('.mascaraPorcento').unmask();
-				$('.mascaraEmailAsj').val( $('.mascaraEmailAsj').val() + '@asj.adv.br' );
-				
+								
 			});
 		});
 	</script>

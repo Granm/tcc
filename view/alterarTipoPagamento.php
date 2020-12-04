@@ -32,7 +32,7 @@ require '../assets/util/conexaoDB.php';
 			</div>
 			
 			<div class="margemCima30"> 
-				<input type="submit" class="botaoCadastro" value="alterar"/> 
+				<input type="submit" class="botaoCadastro" value="Excluir"/> 
 			</div>
 		</div>
 	</form>

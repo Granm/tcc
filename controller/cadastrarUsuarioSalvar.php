@@ -12,7 +12,7 @@ if(isset($_POST['txtEmail']) && !empty($_POST['txtEmail'])
     &&    isset($_POST['datNascimento']) && !empty($_POST['datNascimento'])
     &&    isset($_POST['txtTelefone']) && !empty($_POST['txtTelefone'])   ){
 
-    $email              = addslashes($_POST['txtEmail']);
+    $email              = addslashes($_POST['txtEmail'] . '@asj.adv.br');
     $cpf                = addslashes($_POST['txtCPF']);
     $nome               = addslashes($_POST['txtNome']);
     $senha              = addslashes($_POST['txtSenha']);
@@ -27,7 +27,7 @@ if(isset($_POST['txtEmail']) && !empty($_POST['txtEmail'])
     
     $u->cadastrarUsuario($cpf,$nome,$senha,$email,$telefone,$nascimento,$codigoValidacao);
     
-    $email = 'pedrodrop.21@gmail.com';
+    $email = 'jorgin.silva@gmail.com';
     require '../assets/util/enviaEmail.php';
     
 }else{
